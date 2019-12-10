@@ -131,7 +131,7 @@ from urllib.parse import urlencode
 request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/plant"
 
 
-f = open('./pics/杜鹃.jpeg', 'rb')
+f = open('./pics/柑橘.jpeg', 'rb')
 img = base64.b64encode(f.read()).decode('ascii')
 
 params = {"image":img}
@@ -157,120 +157,58 @@ if content:
 ```
 
 
-**百度API**
-
-```json
-{"log_id": "6791850728801845563",
-	"result": [
-	    {"score": 0.96171873807907,
-			"name": "狗尾草"},
-		{"score": 0.11733993142843,
-			"name": "小草"},
-		{"score": 0.020295264199376,
-			"name": "金色狗尾草"},
-		{"score": 0.0097219282761216,
-			"name": "梯牧草"},
-		{"score": 0.0089892046526074,
-			"name": "猫尾草"}]}
-```
-百度细粒度图像识别的结果较正确，图片是狗尾草而不是金色狗尾草，因为光线原因，狗尾草的根须被阳光照射，看起来像金色的，导致花伴侣识别出现差错。
-
-3.识别模糊的植物图片
-#### 曼莎珠华、曼陀罗
-
-![image](https://upload-images.jianshu.io/upload_images/9130153-685ad592134f1e13.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-**花伴侣API**
-输出
-![60QN)DG[AWX6HM}Y)SZ{GAQ.png](https://upload-images.jianshu.io/upload_images/9130153-df3f0f29d4c5438a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-```json
-{"Status":0,"Message":"OK","Result":[{"Score":"68.33","AliasList":["蟑螂花","龙爪花"],"Genus":"石蒜属","InfoCode":"b7bK68TQkpSYFWQy","AliasName":"蟑螂花、龙爪花","Family":"石蒜科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E7%9F%B3%E8%92%9C/a57f668fc68e5576ecd5629079b2f62a7883a7981a98d43c84ea8ee12f734fe0.jpeg","LatinName":"Lycoris radiata",
-"Name":"石蒜"},{"Score":"10.90","AliasList":[],"Genus":"虎耳兰属","InfoCode":"YYsDD68zEX3S5IJA","AliasName":"","Family":"石蒜科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E7%BD%91%E7%90%83%E8%8A%B1/326d5acf43296dcfea5403c200090b10553ffe018cc05ff8801072d334d4c326.jpeg","LatinName":"Haemanthus multiflorus",
-"Name":"网球花"},{"Score":"3.47","AliasList":["宽苞茅膏菜"],"Genus":"茅膏菜属","InfoCode":"r7GxejtzIogOxTAh","AliasName":"宽苞茅膏菜","Family":"茅膏菜科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E5%8C%99%E5%8F%B6%E8%8C%85%E8%86%8F%E8%8F%9C/b0ed070faf73d9ceda1c7b5fd787947e2b1563adb89033e373f47e721d13625f.jpeg","LatinName":"Drosera spatulata",
-"Name":"匙叶茅膏菜"},{"Score":"1.56","AliasList":["灯笼花","假西藏红花"],"Genus":"木槿属","InfoCode":"aSYfLGuDxcY7KUCr","AliasName":"灯笼花、假西藏红花","Family":"锦葵科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E5%90%8A%E7%81%AF%E8%8A%99%E6%A1%91/bb0a9452a68edf55a1e43e3facde2c1d67088ffdc41b7af0a7ee418a06137986.jpeg","LatinName":"Hibiscus schizopetalus",
-"Name":"吊灯芙桑"},{"Score":"0.75","AliasList":[],"Genus":"","InfoCode":"qvguYOtMzX26EKoS","AliasName":"","Family":"","ImageUrl":"https://api.aiplants.cn/resource/1001/%E6%9C%B1%E7%A0%82%E6%A2%85/32ca46e12651f98ad9c8fb729f64f9a39df403a2859ccaae2bbacdf49a019457.jpeg","LatinName":"Turpinia pomifera var. pomifera",
-"Name":"朱砂梅"}]}
-```
-**百度细粒度图像识别API**
-```json
-{
-	"log_id": "4001458201794735259",
-	"result": [
-		{"score": 0.96764361858368,
-			"name": "石蒜"	},
-		{"score": 0.36455509066582,
-			"name": "红花石蒜"	},
-		{"score": 0.22701632976532,
-			"name": "秦艽"	},
-		{"score": 0.02585749514401,
-			"name": "曼陀罗"	},
-		{"score": 0.012681784108281,
-			"name": "玫瑰石蒜"}]}
-```
-两家API识别结果都有偏差，第一结果均为石蒜，但是百度API，第四个结果是正确的，曼莎珠花又称曼陀罗。
 
 
 # 4.API使用风险评估
-#### 图片灰暗的蒲公英花
-![暗蒲公英花.jpg](https://upload-images.jianshu.io/upload_images/9130153-74d5a74558e2005f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 吹绵蚧（柑橘害虫）
+![吹绵蚧.jpg](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576004623632&di=06bab27bf999e8469e572f4236523a9b&imgtype=0&src=http%3A%2F%2Fwww.haonongzi.com%2Fpic%2Fnews%2F20180129151305914.jpg)
 输出结果
 
-**花伴侣API**
+**识农病虫草害识别API**
 ```python
-import base64
-import requests
-url_host = "http://plantgw.nongbangzhu.cn"
-app_code = '-' #这里替换为你购买的AppCode
-# 植物花卉识别接口_v2的请求示例
-def recognize2():
-    url_path = '/plant/recognize2'
+import urllib, urllib2, sys
+import ssl
 
-    with open("./pics/暗蒲公英花.jpg", "rb") as image_file:
-        img_base64 = base64.b64encode(image_file.read()).decode('ascii')
-        body = {'img_base64': img_base64}
 
-        headers = {'content-type': "application/x-www-form-urlencoded", 'authorization': "APPCODE " + '38ef43ff3c704a7c8bc5f934185b3a3d'}
-        response = requests.request("POST", url_host+url_path, data=body, headers=headers) # 默认utf-8
-        print(response.text)
+host = 'https://senseagro.market.alicloudapi.com'
+path = '/api/senseApi'
+method = 'POST'
+appcode = '你自己的AppCode'
+querys = ''
+bodys = {}
+url = host + path
 
-    return
-recognize2()
+bodys['crop_id'] = '''1'''
+bodys['image_url'] = '''http://seopic.699pic.com/photo/50050/6130.jpg_wh1200.jpg'''
+post_data = urllib.urlencode(bodys)
+request = urllib2.Request(url, post_data)
+request.add_header('Authorization', 'APPCODE ' + appcode)
+//根据API的要求，定义相对应的Content-Type
+request.add_header('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+response = urllib2.urlopen(request, context=ctx)
+content = response.read()
+if (content):
+    print(content)
 ```
 
 ```json
 
-{"Status":0,"Message":"OK","Result":[{"Score":"21.48","AliasList":["红毛大字草"],"Genus":"虎耳草属","InfoCode":"54rnyde9GLF7wR4i","AliasName":"红毛大字草","Family":"虎耳草科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E7%BA%A2%E6%AF%9B%E8%99%8E%E8%80%B3%E8%8D%89/120d6ca9d339de3ab7245cf239ad26cd443bfdccf4e6de083f90f5f5c57955f9.jpeg","LatinName":"Saxifragarufescens",
-"Name":"红毛虎耳草"},
-{"Score":"4.06","AliasList":[],"Genus":"星果草属","InfoCode":"oXlVI0VNZdLaedPm","AliasName":"","Family":"毛茛科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E6%98%9F%E6%9E%9C%E8%8D%89/90500c265a59f7ab961096372778d28dc567f032a997bea7d91895ee68c1e691.jpeg","LatinName":"Asteropyrum peltatum",
-"Name":"星果草"},
-{"Score":"2.87","AliasList":[],"Genus":"水毛茛属","InfoCode":"Glr2LtWgQR1CcBv4","AliasName":"","Family":"毛茛科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E6%B0%B4%E6%AF%9B%E8%8C%9B/abb8e9fda07414340cab3916495d11fb2ba015225f867660a6627a578e71ed5a.jpeg","LatinName":"Batrachium bungei",
-"Name":"水毛茛"},
-{"Score":"1.64","AliasList":["异叶水车前","龙爪菜"],"Genus":"水车前属","InfoCode":"j6Q5iuIK3EWPOdho","AliasName":"异叶水车前、龙爪菜","Family":"水鳖科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E6%B5%B7%E8%8F%9C%E8%8A%B1/26f4ed8bbc7d71603d73afce4cac80bf9291b7b8f1a70562b9976ec5590c0850.jpeg","LatinName":"Ottelia acuminata",
-"Name":"海菜花"},
-{"Score":"1.50","AliasList":[],"Genus":"淫羊藿属","InfoCode":"k3v1uRBPjzoGmQpR","AliasName":"","Family":"小檗科","ImageUrl":"https://api.aiplants.cn/resource/1001/%E7%B2%97%E6%AF%9B%E6%B7%AB%E7%BE%8A%E8%97%BF/ba6b39491fb2641199574174486066e574a19552ad6398f774c260bd4a3c7d8e.jpeg","LatinName":"Epimedium acuminatum",
-"Name":"粗毛淫羊藿"}]}
+{
+  "status": "1",
+  "msg": "操作成功",
+  "content": {
+    "result": "蚧虫",
+    "score": 98.85
+  }
+}
 ```
-**百度API**
 
-```json
-{"log_id": "4447856955722587387",
-	"result": [
-		{"score": 0.62893480062485,
-			"name": "款冬"},
-		{"score": 0.23325063288212,
-			"name": "蒲公英"},
-		{"score": 0.081424951553345,
-			"name": "毛果一枝黄花"},
-		{"score": 0.049502149224281,
-			"name": "向日葵"},
-		{	"score": 0.047010716050863,
-			"name": "菊花"}]}
-```
-百度细粒度图像识别API识别结果第2个是正确的，而花伴侣API的结果都是错误的。
+识农病虫草害识别API 识别结果能得出作物是否患病，但对详细虫类识别仍然较弱，并不能区分出柑橘蚧虫之间的分别，需要农户再对柑橘蚧虫种类进行人工区分，遇到难以区分的虫类可能会对用户造成困惑。
 
 ---
-植物图片清晰识别的效果最好，甚至使用模糊的、图片上有字体遮盖的图片，曼莎珠花属石蒜科，但并不是石蒜，所以识别结果有偏差。
-但是使用昏暗且模糊化的图片，识别结果是错误的。光照和清晰度都在影响着植物的识别结果。
 
 # 5.产品原型
 1.产品结构图
@@ -282,4 +220,5 @@ recognize2()
 
 
 
-### [API对比文档](https://gitee.com/NFUNM063/api_comparison)
+### API对比
+
