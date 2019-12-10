@@ -59,7 +59,7 @@
 ## c) 使用的API
 
 - [花伴侣智能植物识别API](https://market.aliyun.com/products/57124001/cmapi018620.html?spm=5176.10695662.1996646101.searchclickresult.698566bbXs1Z67#sku=yuncode1262000007)
-- [识农病虫草害识别API](https://senseagro.market.alicloudapi.com/api/senseApi)
+- [识农病虫草害识别API](https://market.aliyun.com/products/57124001/cmapi00035953.html?spm=5176.730005.productlist.d_cmapi00035953.585735249mZRjj&innerSource=search_植物病虫害#sku=yuncode2995300001)
 - [百度细粒度图像识别API](https://cloud.baidu.com/product/imagerecognition/fine_grained)
 
 # 3.可行性分析
