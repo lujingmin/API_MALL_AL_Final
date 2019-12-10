@@ -212,9 +212,8 @@ if (content):
 1.产品结构图
 ![产品结构图](1576000668(1).png)
 2.产品流程图
-![image](https://upload-images.jianshu.io/upload_images/9130153-547beb11a20bb447.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 3.产品原型
-[ARPLANT]()
+
 
 
 
