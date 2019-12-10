@@ -67,7 +67,7 @@
 **调用花伴侣智能植物识别API**
 
 1.识别清晰的植物图片
-![柑橘树.jpeg](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=495889552,2575128995&fm=26&gp=0.jpg)
+![柑橘.jpeg](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=495889552,2575128995&fm=26&gp=0.jpg)
 
 
 
@@ -105,8 +105,11 @@ info()
 ```
 
 返回结果
-![@ZH`97D%VMZX8}1UG(L[YHO.png](https://upload-images.jianshu.io/upload_images/9130153-c9c05a2a4c5c0abe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+```json
+{"log_id": 6350852702531560411, "result": [{"score": 0.9089241027832, 
+"name": "柑橘"}, {"score": 0.29999804496765, "name": "橘子"}, {"score": 0.036180101335049, 
+"name": "柚子"}, {"score": 0.028431579470634, "name": "桔子"}, {"score": 0.020664585754275, "name": "橙子"}]}
+```
 
 
 
