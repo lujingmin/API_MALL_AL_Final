@@ -162,7 +162,6 @@ if content:
 # 4.API使用风险评估
 #### 吹绵蚧（柑橘害虫）
 ![吹绵蚧.jpg](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576004623632&di=06bab27bf999e8469e572f4236523a9b&imgtype=0&src=http%3A%2F%2Fwww.haonongzi.com%2Fpic%2Fnews%2F20180129151305914.jpg)
-输出结果
 
 **识农病虫草害识别API**
 ```python
@@ -193,7 +192,7 @@ content = response.read()
 if (content):
     print(content)
 ```
-
+输出结果
 ```json
 
 {
