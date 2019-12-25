@@ -76,7 +76,7 @@
 import base64
 import requests
 url_host = "http://plantgw.nongbangzhu.cn"
-app_code = '-' #这里替换为你购买的AppCode
+app_code = '-' #
 # 植物花卉识别接口_v2的请求示例
 def recognize2():
     url_path = '/plant/recognize2'
@@ -172,7 +172,7 @@ import ssl
 host = 'https://senseagro.market.alicloudapi.com'
 path = '/api/senseApi'
 method = 'POST'
-appcode = '你自己的AppCode'
+appcode = 'sdaaeaf'
 querys = ''
 bodys = {}
 url = host + path
@@ -213,6 +213,6 @@ if (content):
 1.产品结构图
 ![产品结构图](1576000668(1).png)
 2.产品流程图
-3.产品原型
+3.[产品原型](http://nfunm061.gitee.io/api_mall_ai_final/#g=1&p=害虫识别)
 
 
