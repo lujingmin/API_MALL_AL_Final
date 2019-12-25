@@ -212,7 +212,12 @@ if (content):
 # 5.产品原型
 1.产品结构图
 ![产品结构图](10b1476de34713f120929dcd4510465.png)
-2.产品流程图
-3.[产品原型](http://nfunm061.gitee.io/api_mall_ai_final/#g=1&p=害虫识别)
-
-
+2.[产品原型](http://nfunm061.gitee.io/api_mall_ai_final/#g=1&p=害虫识别)
+## 产品原型介绍
+![首页](adaa9a6243ba9a1a50845725f175e26.png)
+![识别页](fd425d5a2c87e3b30b8594e59dd29d1.png)
+![作物识别页](53af8f88f5653c02d7f9aebe403ab6b.png)
+![害虫识别页](95fed7e45eeabc617566068dc3915bc.png)
+![百科页](b56e5c2e94efd3ceb15c3ab39598a25.png)
+![作物百科页](a2c7c83c9f892bc4375b136f311a3a7.png)
+![害虫百科页](23b23829f736bfbfe113c364bebc6c2.png)
