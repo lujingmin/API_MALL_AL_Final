@@ -210,9 +210,10 @@ if (content):
 ---
 
 # 5.产品原型
+[产品原型](http://nfunm061.gitee.io/api_mall_ai_final/#g=1&p=害虫识别)
 1.产品结构图
 ![产品结构图](10b1476de34713f120929dcd4510465.png)
-2.[产品原型](http://nfunm061.gitee.io/api_mall_ai_final/#g=1&p=害虫识别)
+
 ## 产品原型介绍
 ![首页](adaa9a6243ba9a1a50845725f175e26.png)
 
